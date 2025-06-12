@@ -29,11 +29,11 @@ with st.form("input_form"):
     st.header("输入烧伤特征数据")
     
     # 假设有5个特征，这里用示例名称，请根据实际特征修改
-    feature1 = st.number_input("特征1", min_value=0.0, max_value=100.0, value=25.0)
-    feature2 = st.number_input("特征2", min_value=0.0, max_value=100.0, value=30.0)
-    feature3 = st.number_input("特征3", min_value=0.0, max_value=100.0, value=40.0)
-    feature4 = st.number_input("特征4", min_value=0.0, max_value=100.0, value=20.0)
-    feature5 = st.number_input("特征5", min_value=0.0, max_value=100.0, value=50.0)
+    feature1 = st.number_input("BG1", min_value=-8.0, max_value=20.0, value=15.0)
+    feature2 = st.number_input("IL-1β", min_value=200.0, max_value=500.0, value=300.0)
+    feature3 = st.number_input("BG2", min_value=-1.000, max_value=2.000, value=0.123)
+    feature4 = st.number_input("BG4", min_value=-1.000, max_value=1.000, value=0.145)
+    feature5 = st.number_input("Cyclic AMP", min_value=2000, max_value=50000, value=5000)
     
     submitted = st.form_submit_button("预测")
 
